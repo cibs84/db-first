@@ -10,7 +10,7 @@ brand - VARCHAR(15) - NOTNULL
 price - TINYINT - NOTNULL
 color - VARCHAR(15) - NULL
 location - (50) - NULL
-image - TEXT - DEFAULT(https://miosito.com/images/default_book.jpg) - NULL
+image - TEXT - DEFAULT(https://miosito.com/images/default_car.jpg) - NULL
 mileage - TINYINT - NULL
 gearshift - VARCHAR(15) - NULL
 year - TINYINT - NULL
