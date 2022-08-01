@@ -1,0 +1,20 @@
+Descrizione: 
+Modellizzare in un file di testo come visto questa mattina, la struttura di una tabella per memorizzare tutti i dati riguardanti delle auto usate messe in vendita da un concessionario.
+
+
+Nome tabella: used_cars
+
+id - BIGINT - PRIMARY_KEY(NOTNULL, UNIQUE, AUTOINCREMENT, INDEX)
+model - VARCHAR(150) - NOTNULL
+brand - VARCHAR(15) - NOTNULL
+price - TINYINT - NOTNULL
+color - VARCHAR(15) - NULL
+location - (50) - NULL
+image - TEXT - DEFAULT(https://miosito.com/images/default_book.jpg) - NULL
+mileage - TINYINT - NULL
+gearshift - VARCHAR(15) - NULL
+year - TINYINT - NULL
+power_cv - TINYINT - NULL
+fuel_supply - VARCHAR(15) - NULL
+for_new_driver - TINYINT - NULL
+description - TEXT - NULL
