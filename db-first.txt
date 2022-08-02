@@ -5,16 +5,20 @@ Modellizzare in un file di testo come visto questa mattina, la struttura di una 
 Nome tabella: used_cars
 
 id - BIGINT - PRIMARY_KEY(NOTNULL, UNIQUE, AUTOINCREMENT, INDEX)
-model - VARCHAR(150) - NOTNULL
-brand - VARCHAR(15) - NOTNULL
-price - TINYINT - NOTNULL
+model - VARCHAR(30) - NOTNULL - INDEX
+brand - VARCHAR(30) - NOTNULL
+price - DECIMAL(8,2) - NULL
 color - VARCHAR(15) - NULL
 location - (50) - NULL
 image - TEXT - DEFAULT(https://miosito.com/images/default_car.jpg) - NULL
-mileage - TINYINT - NULL
+mileage - MEDIUMINT - NULL
 gearshift - VARCHAR(15) - NULL
-year - TINYINT - NULL
-power_cv - TINYINT - NULL
-fuel_supply - VARCHAR(15) - NULL
+production_year - YEAR - NULL
+registration_year - DATE - NULL
+car_number - VARCHAR(20) - NOTNULL - UNIQUE
+doors - TINYINT - NOTNULL
+power_cv - SMALLINT - NOTNULL
+fuel_supply - VARCHAR(10) - NULL
 for_new_driver - TINYINT - NULL
 description - TEXT - NULL
+is_published - TINYINT - DEFAULT(0)
